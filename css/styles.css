@@ -1,6 +1,197 @@
-body {
-    background-image: url("https://lavozdedurango.com.mx/wp-content/uploads/2021/11/UTD.jpg");
-    background-size: cover;
-    background-repeat:no-repeat;
-    background-position: center center;
-  }
+/* Imports
+______________________ */
+/* Globals Styles */
+@import url("./globals-styles.css");
+/* Header */
+@import url("./header.css");
+/* Sidebar */
+@import url("./sidebar.css");
+
+/* Container
+______________________ */
+.container-template {
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Main
+_______________________ */
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+/* Content
+______________________ */
+.content {
+  width: 100%;
+  padding: 10px 30px;
+}
+
+/* Dashboard
+_______________________ */
+.cards-amount {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.card-amount {
+  width: 300px;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 20px;
+  border: 1px solid #ccc;
+}
+
+.card-amount:hover {
+  /* border-color: var(--primary); */
+  transform: translateY(-3px);
+  box-shadow: 0px 4px 5px 0px rgba(204,204,204,0.75);
+  -webkit-box-shadow: 0px 4px 5px 0px rgba(204,204,204,0.75);
+  -moz-box-shadow: 0px 4px 5px 0px rgba(204,204,204,0.75);
+}
+
+.card-amount-icon {
+  color: var(--primary);
+  transition: var(--transition);
+}
+
+.card-amount-number {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  background: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 10px;
+}
+
+/* Documents
+________________________________ */
+.documents {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.document {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+  cursor: pointer;
+  border: 1px solid #ccc;
+  padding: 20px;
+  position: relative;
+}
+
+.document-icon {
+  transition: var(--transition);
+}
+
+.document:hover > .document-icon {
+  color: var(--primary);
+}
+
+.document-options {
+  position: absolute;
+  width: 100%;
+  border-radius: var(--border-radius);
+  top: 70px;
+  left: 0;
+  height:0;
+  box-shadow: 0px 4px 5px 0px rgba(204,204,204,0.75);
+  -webkit-box-shadow: 0px 4px 5px 0px rgba(204,204,204,0.75);
+  -moz-box-shadow: 0px 4px 5px 0px rgba(204,204,204,0.75);
+  overflow: auto;
+  border: 1px solid #ccc;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.document-option {
+  width: 100%;
+  height: 50px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: var(--transition);
+}
+
+.document-option:hover {
+  background: var(--gray-light);
+}
+
+.document-option:hover > .document-option-icon {
+  color: var(--primary);
+}
+
+/* Modal */
+
+.modal {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: var(--dark-gradient);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 999;
+  transition: var(--transition);
+  transform: translateY(-10px);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-content {
+  width: 100%;
+  max-width: 1024px;
+  background: #fff;
+}
+
+.modal-document {
+  width: 100%;
+}
+
+.modal-button-close {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+  font-size: 30px;
+}

@@ -1,0 +1,115 @@
+/* Google Fonts - Montserrat
+______________________________ */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+/* Variables
+_______________________________*/
+:root {
+    --primary: 	#28a745;
+    --primary-hover: #1b8333;
+    --font: 'Montserrat', sans-serif;
+    --dark-gradient: rgba(0,0,0,0.8);
+    --font-color: #333;
+    --transition: 0.3s ease;
+    --border-radius: 10px;
+    --gray-light: rgb(240, 240, 240);
+}
+
+/* Format Styles
+______________________________ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: var(--font);
+    color: var(--font-color);
+}
+
+a {
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+ul, li {
+    list-style: none;
+}
+
+button {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: var(--font);
+    transition: var(--transition);
+}
+
+img {
+    object-fit: cover;
+    width: 30px;
+    height: 30px;
+}
+
+/* Animations
+__________________________ */
+
+@keyframes rotate {
+    0%{transform: rotate(0);}
+    100%{transform: rotate(360deg);}
+}
+
+/* JavaScript Class 
+____________________________*/
+.sidebar.hidden {
+    width: 80px;
+    /* overflow: hidden; */
+    align-items: center;
+}
+
+.sidebar.hidden .sidebar-title {
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+}
+
+.sidebar.hidden .sidebar-link span {
+    opacity: 0;
+    transition: var(--transition);
+    visibility: hidden;
+}
+
+.sidebar.hidden .sidebar-link i {
+    font-size: 20px;
+    transition: var(--transition);
+}
+
+.sidebar-footer-options.active {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.sidebar.hidden .sidebar-footer-options {
+    transform: translateX(150px);
+}
+
+.document-options.active {
+    height: auto;
+    max-height: 250px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.document-icon.active {
+    transform: rotate(90deg);
+    color: var(--primary);
+}
+
+.modal.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
