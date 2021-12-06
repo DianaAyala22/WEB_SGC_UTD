@@ -1,18 +1,28 @@
-/* Google Fonts - Montserrat
+/* Google Fonts - Outfit
 ______________________________ */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
 
 /* Variables
 _______________________________*/
 :root {
-    --primary: 	#28a745;
-    --primary-hover: #1b8333;
-    --font: 'Montserrat', sans-serif;
-    --dark-gradient: rgba(0,0,0,0.8);
-    --font-color: #333;
+    --primary: 	#6cc599;
+    --primary-hover: #448f69;
+    --secundary: #c5c26c;
+    --secundary-hover: #c5cf69;
+
+    --font: 'Outfit', sans-serif;
+    --font-color: rgb(68, 68, 68);
+
     --transition: 0.3s ease;
-    --border-radius: 10px;
     --gray-light: rgb(240, 240, 240);
+    --dark-gradient: rgba(0,0,0,0.8);
+    
+    --border-color: rgb(228, 228, 228);
+    --border-radius: 10px;
+    --box-shadow: 0px 0px 5px 0px #ccc;
+
+    --yellow: #c5c26c;
+    --red: #c56c6c;
 }
 
 /* Format Styles
@@ -28,6 +38,7 @@ body {
     font-size: 15px;
     font-family: var(--font);
     color: var(--font-color);
+    background: rgb(243, 243, 243);
 }
 
 a {
@@ -35,16 +46,17 @@ a {
     transition: var(--transition);
 }
 
-ul, li {
+ul{
     list-style: none;
 }
 
-button {
+button, input {
     background: transparent;
     border: none;
     outline: none;
     font-family: var(--font);
     transition: var(--transition);
+    box-shadow: none;
 }
 
 img {
@@ -112,4 +124,22 @@ ____________________________*/
     transform: translateY(0);
     opacity: 1;
     visibility: visible;
+}
+
+.container-preloader.hidden {
+    transform: translateY(-10px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.user-actions.active {
+    height: 350px;
+}
+
+.card-profile-data-state-icon.active {
+    color: var(--primary);
+}
+
+.card-profile-data-state-icon.banned {
+    color: var(--red);
 }

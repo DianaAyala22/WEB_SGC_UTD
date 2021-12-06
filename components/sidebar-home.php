@@ -8,31 +8,31 @@
     </div>
     <ul class="sidebar-elements">
         <li class="sidebar-element">
-            <a href="../home.php" class="sidebar-link" title="Inicio">
+            <a href="./index.php" class="sidebar-link" title="Inicio">
                 <i class="far fa-home"></i>
                 <span>Inicio</span>
             </a>
         </li>
         <li class="sidebar-element">
-            <a href="../pages/dashboard.php" class="sidebar-link" title="Dashboard">
+            <a href="./pages/dashboard.php" class="sidebar-link" title="Dashboard">
                 <i class="far fa-tachometer-alt"></i>
                 <span>Dashboard</span>
             </a>
         </li>
         <li class="sidebar-element">
-            <a href="../pages/procedimientos.php" class="sidebar-link" title="Procedimientos">
+            <a href="./pages/procedimientos.php" class="sidebar-link" title="Procedimientos">
                 <i class="far fa-folders"></i>
                 <span>Procedimientos</span>
             </a>
         </li>
         <li class="sidebar-element">
-            <a href="../pages/registros.php" class="sidebar-link" title="Registros">
+            <a href="./pages/registros.php" class="sidebar-link" title="Registros">
                 <i class="far fa-tasks"></i>
                 <span>Registros</span>
             </a>
         </li>
         <li class="sidebar-element">
-            <a href="../bitacora/bitacora.php" class="sidebar-link" title="Bitácora">
+            <a href="./bitacora/bitacora.php" class="sidebar-link" title="Bitácora">
                 <i class="far fa-calendar"></i>
                 <span>Bitácora</span>
             </a>
@@ -40,7 +40,7 @@
     </ul>
     <div class="sidebar-footer">
         <div class="sidebar-footer-options" id="options">
-           <a href="../pages/perfil.php?id=" class="sidebar-footer-options-option">
+           <a href="./pages/perfil.php?id=" class="sidebar-footer-options-option">
                <i class="far fa-user"></i>
                <span>Perfil</span>
             </a>

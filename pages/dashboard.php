@@ -11,6 +11,7 @@
     <div class="container-template">
         <?php include "../components/sidebar.php" ?>
         <main class="main">
+            <?php $icon = "far fa-tachometer-alt" ?>
             <?php $title = "Dashboard" ?>
             <?php include "../components/header.php" ?>
             <div class="content">
@@ -19,26 +20,27 @@
                         <i class="far fa-times"></i>
                     </button>
                     <div class="modal-content">
-                        <embed class="modal-document" src="../pdf/prueba.pdf" width="600" height="700" alt="pdf" pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">
+                        <embed class="modal-document" src="../pdf/prueba.pdf" alt="pdf" pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">
                     </div>
                 </div>
-
                 <h2 class="title">Cantidad de documentos</h2>
                 <div class="cards-amount">
                     <div class="card-amount">
                         <i class="far fa-chalkboard-teacher card-amount-icon"></i>
-                        <p class="card-amount-text">Profesores</p>
                         <span class="card-amount-number">10</span>
+                        <p class="card-amount-text">Profesores</p>
                     </div>
+
                     <div class="card-amount">
                         <i class="far fa-user-tie card-amount-icon"></i>
+                        <span class="card-amount-number">8</span>
                         <p class="card-amount-text">Directivo</p>
-                        <span class="card-amount-number">5</span>
                     </div>
+
                     <div class="card-amount">
                         <i class="far fa-list card-amount-icon"></i>
+                        <span class="card-amount-number">5</span>
                         <p class="card-amount-text">Administrativo</p>
-                        <span class="card-amount-number">8</span>
                     </div>
                 </div>
 
@@ -115,8 +117,8 @@
             </div>
         </main>
     </div>
-    <?php include "../resources/scripts.php" ?>
     <script src="../js/select.js"></script>
     <script src="../js/modal.js"></script>
+    <?php include "../resources/scripts.php" ?>
 </body>
 </html>

@@ -19,23 +19,21 @@
     <?php include "../components/sidebar.php" ?>
 
     <main class="main">
+      <?php $icon = "far fa-tasks" ?>
       <?php $title = "Registros" ?>
       <?php include "../components/header.php" ?>
       <!-- Contenido -->
 
       <div class="container">
-        <div class="col-lg-10">
           <h1 class="mb-3 text-center mt-5">Registros</h1>
 
-          <div class="container col-sm-6 mb-2">
-            <form class="d-flex" action="../php/registros/agregar_registro.php" method="post">
+            <form class="d-flex form" action="../php/registros/agregar_registro.php" method="post">
               <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
               <button class="btn btn-success" type="submit">Buscar</button>
             </form>
-          </div>
 
           <form class="needs-validation" action="../php/registros/agregar_registro.php" name="form_registros"
-            method="POST" style="margin-left: 50px;">
+            method="POST">
             <div class="row g-3">
               <div class="col-sm-6">
                 <label for="codigo" class="form-label">Código</label>
@@ -86,7 +84,7 @@
 
               <hr class="my-4">
 
-              <div class="row">
+              <div class="row form-buttons">
                 <div class="col">
                   <button onclick="confirmar()" class="w-100 btn btn-success btn-lg col-sm-4"
                     type="button">Agregar</button>
@@ -120,7 +118,6 @@
                 </div>
               </div>
           </form>
-        </div>
       </div>
 
       <!-- Contenido -->
