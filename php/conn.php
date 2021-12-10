@@ -16,6 +16,4 @@ if ($conexion->connect_errno) {
   echo "Ocurrió un error al intentar conectar la app con la base de datos: (" . $conexion->connect_errno . ") " . $conexion->connect_error;
 }
 
-echo $conexion->host_info . "\n";
-
 ?>

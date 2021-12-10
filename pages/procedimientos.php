@@ -32,7 +32,7 @@
             </form>
           
             <form class="form" action="../php/procedimientos/agregar_procedimiento.php" method="post"
-              name="form_procedimientos" id="form_procedimientos">
+              name="form_procedimientos" id="form_procedimientos" enctype="multipart/form-data">
               <div class="row">
                 <div class="col-sm-6">
                   <label for="codigopk" class="form-label">Código PK</label>

@@ -120,6 +120,10 @@ ____________________________*/
     color: var(--primary);
 }
 
+.document-options-message.active {
+    display: block;
+}
+
 .modal.active {
     transform: translateY(0);
     opacity: 1;

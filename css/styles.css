@@ -229,6 +229,11 @@ ________________________________ */
   z-index: 100;
 }
 
+.document-options-message {
+  padding: 20px;
+  display: none;
+}
+
 .document-option {
   width: 100%;
   height: 50px;
